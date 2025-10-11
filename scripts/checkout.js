@@ -6,7 +6,7 @@ let cartSummaryHtml = "";
 
 cart.map((cartItem) => {
   let product = products.find((p) => p.id == cartItem.productId);
-  console.log(product);
+  // console.log(product);
   cartSummaryHtml += `
     <div class="cart-item-container
       js-cart-item-container-${product.id}">
