@@ -12,7 +12,7 @@ export const deliveryOptions = [{
   priceCents: 999
 }];
 
-export function getDeliveryOptions(deliverOptionId){
+export function getDeliveryOption(deliverOptionId){
     let deliveryOption
 
     deliveryOptions.map((option)=>{
@@ -20,6 +20,6 @@ export function getDeliveryOptions(deliverOptionId){
             deliveryOption = option
         }
     })
+
     return deliveryOption || deliveryOptions[0]
-    
 }
