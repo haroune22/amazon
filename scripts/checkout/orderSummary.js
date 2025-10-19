@@ -106,7 +106,7 @@ export function renderOrderSummary() {
       const productId = link.dataset.productId;
       // console.log("Deleting product with ID:", productId);
       removeFromCart(productId);
-
+      renderPaymentSummary();
       const container = document.querySelector(
         `.js-cart-item-container-${productId}`
       );
